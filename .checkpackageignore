@@ -99,8 +99,6 @@ board/technologic/ts4900/post-image.sh Shellcheck
 board/toradex/apalis-imx6/post-image.sh Shellcheck
 board/udoo/common/post-build.sh Shellcheck
 board/udoo/mx6qdl/patches/linux/0000-udoo-disable-usbh1.patch Upstream
-board/versal/post-build.sh Shellcheck
-board/versal/post-image.sh Shellcheck TrailingSpace
 board/zynqmp/kria/patches/uboot/v1-0001-makefile-add-multi_dtb_fit-dep.patch ApplyOrder Upstream
 boot/afboot-stm32/0003-Makefile-disable-stack-protector.patch Upstream
 boot/at91bootstrap/0001-eabi-fix.patch Upstream
@@ -109,12 +107,10 @@ boot/at91bootstrap/0003-u-boot-relocation-fix.patch Upstream
 boot/at91dataflashboot/0001-do-not-install.patch Upstream
 boot/at91dataflashboot/0002-eabi-fixes.patch Upstream
 boot/grub2/0001-Makefile-Make-grub_fstest.pp-depend-on-config-util.h.patch Upstream
-boot/grub2/0002-grub-mkconfig-Restore-umask-for-the-grub.cfg.patch Upstream
 boot/lpc32xxcdl/0001-compiler_name.patch Upstream
 boot/lpc32xxcdl/0002-delete_redundant_files.patch Upstream
 boot/lpc32xxcdl/0003-libnosys_gnu.patch Upstream
 boot/lpc32xxcdl/0004-slashes.patch Upstream
-boot/mv-ddr-marvell/0001-Makefile-disable-stack-protection.patch Upstream
 boot/optee-os/3.13.0/0001-core-zlib-fix-build-warning-when-_LFS64_LARGEFILE-is.patch Upstream
 boot/syslinux/0001-bios-Fix-alignment-change-with-gcc-5.patch Upstream
 boot/syslinux/0002-Disable-PIE-to-avoid-FTBFS-on-amd64.patch Upstream
@@ -285,9 +281,6 @@ package/clang/0001-lib-Driver-ToolChains-Gnu-Use-GCC_INSTALL_PREFIX-in-.patch Up
 package/cmake/0001-rename-cmake-rootfile.patch Upstream
 package/cmocka/0001-Don-t-redefine-uintptr_t.patch Upstream
 package/collectd/0001-src-netlink.c-remove-REG_NOERROR.patch Upstream
-package/connman/0001-gweb-Fix-OOB-write-in-received_data.patch Upstream
-package/connman/0002-wispr-Add-reference-counter-to-portal-context.patch Upstream
-package/connman/0003-wispr-Update-portal-context-references.patch Upstream
 package/connman/S45connman Variables
 package/copas/0001-Do-not-load-coxpcall-for-LuaJIT.patch Upstream
 package/coremark-pro/coremark-pro.sh.in Shellcheck
@@ -490,7 +483,6 @@ package/freeradius-client/0001-fix-for-nettle.patch Upstream
 package/freerdp/0001-Fix-variable-declaration-in-loop.patch Upstream
 package/freerdp/0002-Fixed-variable-declaration-in-loop.patch Upstream
 package/freerdp/0003-winpr-include-winpr-file.h-fix-build-on-uclibc.patch Upstream
-package/freerdp/0004-Fix-8702-Disable-sha3-and-shake-hashes-for-libressl.patch Upstream
 package/freescale-imx/imx-kobs/0001-Fix-musl-build.patch Upstream
 package/freescale-imx/imx-kobs/0002-Fix-build-for-recent-toolchains.patch Upstream
 package/freescale-imx/imx-uuc/S80imx-uuc Indent Shellcheck Variables
@@ -817,12 +809,9 @@ package/liboping/0004-Fix-compile-error-on-GCC-7.patch Upstream
 package/liboping/0005-src-oping.c-always-use-s-style-format-for-printf-sty.patch Upstream
 package/libp11/0001-src-p11_attr.c-fix-build-with-gcc-4.8.patch Upstream
 package/libpam-tacplus/0001-Add-an-option-to-disable-Werror.patch Upstream
-package/libpjsip/0001-Merge-pull-request-from-GHSA-9pfh-r8x4-w26w.patch Upstream
-package/libpjsip/0002-Merge-pull-request-from-GHSA-cxwq-5g9x-x7fr.patch Upstream
 package/libplatform/0001-cmake-require-c-11-as-the-minimum-standard.patch Upstream
 package/libpng/0001-Disable-pngfix-and-png-fix-itxt.patch Upstream
 package/libpthsem/0001-fix-build-on-linux-3.x-host.patch Upstream
-package/libqb/0001-Add-disable-tests-option.patch Upstream
 package/libressl/0001-always-expose-SSL_OP_NO_TLSv1_3.patch Upstream
 package/libroxml/0001-src-roxml_mem.h-add-missing-extern.patch Upstream
 package/librsvg/0001-gdk-pixbuf-loader-Makefile.am-set-GDK_PIXBUF_MODULED.patch Upstream
@@ -1038,8 +1027,6 @@ package/neard/S53neard Indent Shellcheck Variables
 package/neardal/0001-lib-neardal.h-fix-build-with-gcc-10.patch Upstream
 package/neon/0001-Revert-Advertise-TS_SSL-feature-with-OpenSSL-1.1.0.patch Upstream
 package/neon/0002-configure.ac-fix-autoreconf.patch Upstream
-package/netatalk/0001-Fix-setting-of-LD_LIBRARY_FLAGS-shlibpath_var.patch Upstream
-package/netatalk/0002-etc-uams-openssl_compat.h-fix-build-with-libressl-2..patch Upstream
 package/netatalk/S50netatalk EmptyLastLine Indent Variables
 package/netcat/0001-signed-bit-counting.patch Sob Upstream
 package/netopeer2/S52netopeer2 Shellcheck Variables
@@ -1124,7 +1111,7 @@ package/open-iscsi/0001-SHA3-is-not-supported-by-libressl.patch Upstream
 package/open-plc-utils/0001-Remove-OWNER-and-GROUPS-parameters-to-install.patch Upstream
 package/open-plc-utils/0002-plc-plc.h-fix-build-with-gcc-10.patch Upstream
 package/open2300/0001-fix-makefile.patch Upstream
-package/openjdk/17.0.7+7/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch Upstream
+package/openjdk/17.0.8+7/0001-Add-ARCv2-ISA-processors-support-to-Zero.patch Upstream
 package/openldap/0001-fix_cross_strip.patch Upstream
 package/openldap/0002-fix-bignum.patch Upstream
 package/openldap/0003-disable-docs.patch Upstream
@@ -1378,7 +1365,6 @@ package/rpi-userland/0006-interface-vcos-pthreads-CMakeLists.txt-fix-build-wit.p
 package/rpi-userland/0007-GLES2-gl2ext.h-add-GLint64-GLuint64-and-GLsync-typed.patch Upstream
 package/rt-tests/0001-Fix-a-build-issue-with-uClibc-ng.patch Upstream
 package/rt-tests/0002-Makefile-drop-explicit-undefine-PYLIB-for-compatibil.patch Upstream
-package/rtl8192eu/0002-Fix-conflicting-get_ra-on-PowerPC.patch Upstream
 package/rtl_433/0001-CMakeLists.txt-use-pkg-config-to-detect-openssl-when.patch Upstream
 package/rtl_433/0002-minor-Fix-mongoose-build-without-threads.patch Upstream
 package/rtmpdump/0001-include-limits.h.patch Upstream
@@ -1398,12 +1384,12 @@ package/samba4/0002-build-find-pre-built-heimdal-build-tools-in-case-of-.patch U
 package/samba4/0003-ldap_message_test.c-include-stdint.h-before-cmoka.h.patch Upstream
 package/samba4/S91smb Indent Shellcheck Variables
 package/sane-backends/0001-sane_backend-add-missing-config.h.patch Upstream
-package/screen/0001-no-memcpy-fallback.patch Upstream
-package/screen/0002-install-no-backup-binary.patch Upstream
-package/screen/0003-install-always-chmod.patch Upstream
-package/screen/0004-install-nonversioned-binary.patch Upstream
-package/screen/0005-rename-sched_h.patch Upstream
-package/screen/0006-comm-h-now-depends-on-term-h.patch Upstream
+package/screen/0001-Do-not-use-memcpy-as-an-alternative-for-bcopy-memmov.patch Upstream
+package/screen/0002-Do-not-create-backup-of-old-installed-binary.patch Upstream
+package/screen/0003-Change-binary-permission-flags-even-if-chown-fails.patch Upstream
+package/screen/0004-Support-overriding-SCREEN-to-get-a-non-versioned-bin.patch Upstream
+package/screen/0005-Renamed-sched.h-to-eventqueue.h.patch Upstream
+package/screen/0006-comm.h-now-depends-on-term.h.patch Upstream
 package/screen/0007-comm.h-needed-for-list_-display-generic-.o.patch Upstream
 package/scrub/0001-configure-ac-make-sure-m4-macros-are-included-in-the-build.patch Upstream
 package/sdl/0001-use-correct-directfb-config.patch Upstream
@@ -1502,7 +1488,7 @@ package/taskd/0001-Fix-missing-cmakedefine-HAVE_GET_CURRENT_DIR_NAME.patch Upstr
 package/taskd/0002-Use-correct-variables-for-GnuTLS-detection.patch Upstream
 package/taskd/0003-CMakeLists-use-pkg-config-uuid-detection.patch Upstream
 package/tcf-agent/S55tcf-agent Shellcheck Variables
-package/tcl/0001-dont-build-compat.patch Upstream
+package/tcl/0001-Disable-tcl-compatibility-layers.patch Upstream
 package/tesseract-ocr/0001-Check-if-platform-supports-feenableexcept.patch Upstream
 package/tesseract-ocr/0002-configure.ac-fix-build-on-aarch64_be.patch Upstream
 package/tftpd/0001-Use-extern-qualifier-to-fix-gcc-10.x-build.patch Upstream
@@ -1732,7 +1718,6 @@ support/download/check-hash Shellcheck
 support/download/cvs Shellcheck
 support/download/dl-wrapper Shellcheck
 support/download/file Shellcheck
-support/download/git Shellcheck
 support/download/go-post-process Shellcheck
 support/download/hg Shellcheck
 support/download/scp Shellcheck
