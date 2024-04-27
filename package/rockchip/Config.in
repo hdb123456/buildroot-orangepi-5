@@ -56,6 +56,11 @@ config BR2_PACKAGE_RK3326
 	help
 	  Use rockchip's rk3326 chip
 
+config BR2_PACKAGE_RK3328
+	bool "rk3328 chip"
+	help
+	  Use rockchip's rk3328 chip
+
 config BR2_PACKAGE_RK3358
 	bool "rk3358 chip"
 	select BR2_PACKAGE_ROCKCHIP_HAS_ISP1
@@ -112,7 +117,7 @@ config BR2_PACKAGE_CAMERA_ENGINE
 
 config BR2_PACKAGE_ROCKCHIP_SDK_VERSION
 	string "Rockchip SDK version"
-	default rk3588/linux_release_v1.1.1a
+	default rk3588/linux_release_v1.4.0a
 	help
 		Rockchip SDK version, tag of firefly gitlab repository
 
