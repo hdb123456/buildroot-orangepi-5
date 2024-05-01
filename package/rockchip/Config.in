@@ -124,9 +124,10 @@ config BR2_PACKAGE_ROCKCHIP_SDK_VERSION
 menu "Rockchip BSP packages"
 	source "package/rockchip/camera-engine-rkaiq/Config.in"
 	source "package/rockchip/camera-engine-rkisp/Config.in"
-	source "package/rockchip/rockchip-mpp/Config.in"
+	source "package/rockchip/gstreamer1-rockchip/Config.in"
+	source "package/rockchip/rknpu2/Config.in"
 	source "package/rockchip/rockchip-rga/Config.in"
-	source "package/rockchip/rkwifibt/Config.in"
+	source "package/rockchip/rockchip-mpp/Config.in"
 endmenu
 
 endif
